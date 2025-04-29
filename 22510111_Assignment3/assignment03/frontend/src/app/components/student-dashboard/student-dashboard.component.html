@@ -1,0 +1,13 @@
+<div class="student container">
+    <h1 class="student text-center">Student Dashboard</h1>
+    <section class="student-dashboard__section user-info card p-4 mb-4">
+        <h2>Welcome, {{userData().name}}</h2>
+        <p>Email: {{userData().email}}</p>
+        <p>Role: {{userData().role}}</p>
+    </section>
+
+    <section class="student-dashboard__section courses card p-4 mt-4">
+        <h2 class="student-dashboard__section-title mb-3">Enroll in a course</h2>
+        <app-enroll-course class="student-dashboard__enroll-course"></app-enroll-course>
+    </section>
+</div>

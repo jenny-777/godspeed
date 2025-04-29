@@ -1,0 +1,55 @@
+.admin-dashboard {
+  margin: 0;
+  padding: 2rem;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #121212; // Dark background
+  color: #e0e0e0; // Light text color
+
+  &__title {
+    color: #bb86fc; // Purple accent
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  &__section {
+    background-color: #1e1e1e; // Darker section background
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    margin-left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    
+    &-title {
+      color: #bb86fc; // Purple accent
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+  }
+
+  .user-management {
+    margin-bottom: 2.5rem;
+  }
+
+  .reports {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.card {
+  transition: all 0.3s ease;
+  border: none;
+  background-color: #1e1e1e; // Darker card background
+  color: #e0e0e0;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(187, 134, 252, 0.3);
+  }
+}
+

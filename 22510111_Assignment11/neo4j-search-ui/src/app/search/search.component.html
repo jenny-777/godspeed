@@ -1,0 +1,34 @@
+<h2>Neo4j Paper Search</h2>
+
+<form (ngSubmit)="search()">
+  <label>Paper A ID:
+    <input type="text" [(ngModel)]="paperA" name="paperA" required>
+  </label>
+  <br />
+
+  <label>Paper B ID:
+    <input type="text" [(ngModel)]="paperB" name="paperB">
+  </label>
+  <br />
+
+  <label>Search Type:
+    <select [(ngModel)]="queryType" name="queryType">
+      <option value="citation">Check Citation (multi-level)</option>
+      <option value="classification">Show Classification</option>
+      <option value="custom">Custom Query</option>
+    </select>
+  </label>
+  <br />
+
+  <label *ngIf="queryType === 'custom'">Enter Cypher Query:
+    <input type="text" [(ngModel)]="customQuery" name="customQuery">
+  </label>
+  <br />
+
+  <button type="submit">Search</button>
+</form>
+
+<div *ngIf="result">
+  <h3>Result:</h3>
+  <pre>{{ result | json }}</pre>
+</div>

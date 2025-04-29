@@ -1,0 +1,18 @@
+<div class="add-student-container">
+  <h1>Add Student</h1>
+  <form class="add-student-form" (ngSubmit)="onSubmit()">
+    <label for="ID">Student ID:</label>
+    <input type="text" id="ID" name="ID" [(ngModel)]="ID" required>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" [(ngModel)]="name" required>
+
+    <label for="dept_name">Department Name:</label>
+    <input type="text" id="dept_name" name="dept_name" [(ngModel)]="dept_name" required>
+
+    <label for="tot_cred">Total Credits:</label>
+    <input type="number" id="tot_cred" name="tot_cred" [(ngModel)]="tot_cred" required>
+
+    <button type="submit">Add Student</button>
+  </form>
+</div>

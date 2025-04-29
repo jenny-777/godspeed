@@ -1,0 +1,13 @@
+<div class="instructor container">
+    <h1 class="instructor-dashboard__title text-center mb-4">Instructor Dashboard</h1>
+    <section class="admin-dashboard__section user-info card p-4">
+        <h2>Welcome, {{userData().name}}</h2>
+        <p>Email: {{userData().email}}</p>
+        <p>Role: {{userData().role}}</p>
+    </section>
+
+    <section class="instructor-dashboard__section  card p-4">
+        <h2 class="instruction-dashboard__section-title mb-3">assign course</h2>
+        <app-assign-course class="instructor-dashboard__enroll-course"></app-assign-course>
+    </section>
+</div>
